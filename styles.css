@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("fonts/norse-bold-webfont.woff");
+  }
+.img_aesthetic{
+    /* background-image:url("img/background.jpg"); */
+    width: 30%;
+    min-height: 100vh;
+    
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.signup_container{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3%;
+    padding-top: 5%;
+    min-height: 60%;
+    gap: 5% 5%;
+    
+}
+.heading{
+    /* padding-left: 3%; */
+    text-align: left;
+    display: flex;
+    min-height: 10%;
+    min-width: 100%;
+    font-size: 6rem;
+    color: rgba(2, 112, 112, 0.815);
+    /* background-color: rgb(2, 139, 133); */
+    padding-bottom: 5%;
+    font-weight: bold;
+    flex-direction: column;
+}
+.container{
+    
+    
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 100%;
+    
+}
+
+ .signup_container>div{
+    display: flex;
+    width: max(45%,20vw);
+    height: 10%;
+    
+}
+.input_blocks{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+
+}
+.input_blocks>input{
+    max-width: 60%;
+    height: 34%;
+}
+input:focus{
+    outline: none !important;
+    border: solid 4px rgba(2, 112, 112, 0.815);
+    border-radius: 5px;
+}
+input:focus:invalid{
+    border: solid 4px red;
+    border-radius: 5px;
+}
+input:focus:valid{
+    border: solid 4px green;
+    border-radius: 5px;
+}
+
+.signup_container>.footer>button{
+    background-color: rgba(2, 112, 112, 0.815);
+    width:30%;
+    font-size: 250%;
+    color: aliceblue;
+    font-weight: bold;
+    height: 80%;
+    padding: 0%;
+    text-align: center;
+    align-self: center;
+    /* margin-left: 15%;*/
+    margin-bottom: 5%; 
+    
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}

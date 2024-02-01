@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+    <div class="img_aesthetic">
+        <img src="img/background.jpg" alt="" height="100%" width="100%">
+    </div>
+    
+    <div class="signup_container">
+        <div class="heading">
+            psst.. got some data?
+            
+        </div>
+
+        <div class="input_blocks">
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name" pattern="/[a-zA-Z]/g">
+        </div>
+        <div class="input_blocks">
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last_name" pattern="/[a-zA-Z]/g">
+        </div>
+        <div class="input_blocks">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="input_blocks">
+            <label for="mobile-number">Phone no.</label>
+            <input type="tel" name="mobile-number" id="mobile-number" pattern="/[0-9]/g">
+        </div>
+        <div class="input_blocks">
+            <label for="new-password">New Password:*</label>
+            <input type="text" name="new-password" id="new-password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^\w\s]).{8,}$" placeholder="1234@Abc" required>
+        </div>
+
+        <div class="input_blocks">
+            <label for="confirm-password">Confirm Password:*</label>
+            <input type="text" name="confirm-password" id="confirm-password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^\w\s]).{8,}$" placeholder="1234@Abc" required>
+        </div>
+        <div class="footer">
+        <button type="submit">sell</button>
+        <div style="font-size: 2rem;">Already a member? <span style="color: brown; font-size: 2rem;">log in</span></div>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
