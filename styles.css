@@ -3,11 +3,27 @@
     src: url("fonts/norse-bold-webfont.woff");
   }
 .img_aesthetic{
-    /* background-image:url("img/background.jpg"); */
-    width: 30%;
+    background-image:url("img/background.jpg");
+    background-size: 100% 100%;
+    width: max(30%,500px);
     min-height: 100vh;
+    display: flex;
+    align-items: center;
     
 }
+.img_aesthetic>div{
+    width: 100%;
+    height: 30%;
+    background-color: rgba(3, 145, 145, 0.199);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_aesthetic>div>img{
+    transform: scale(0.3);
+}
+
 :root{
     font-size: 62.5%;
 }
@@ -23,34 +39,60 @@ body{
 .signup_container{
     width: 70%;
     display: flex;
-    flex-wrap: wrap;
-    padding-left: 3%;
-    padding-top: 5%;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+    
+}
+.input_container{
+    min-width: 100%;
     min-height: 60%;
-    gap: 5% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5%;
+    gap: 0% 5%;
+    margin-top: 5%;
+    
+
     
 }
 .heading{
     /* padding-left: 3%; */
-    text-align: left;
+    
     display: flex;
-    min-height: 10%;
+   
     min-width: 100%;
-    font-size: 6rem;
-    color: rgba(2, 112, 112, 0.815);
-    /* background-color: rgb(2, 139, 133); */
-    padding-bottom: 5%;
-    font-weight: bold;
+    height: 20%;
+    /* color: rgba(2, 112, 112, 0.815); */
+    color: rgb(108, 180, 243);
+    background-color: rgb(2, 139, 133);
+  
+   
     flex-direction: column;
+    justify-content: flex-start;
+    
+    padding-bottom: 1.5%;
+    
+}
+.heading>p{
+    margin-top: -0.001%;
+    font-size: max(4.4vw,35px);
+    font-weight: bold;
 }
 .container{
     
-    
+
     display: flex;
     align-items: stretch;
     width: 100%;
     justify-content: space-between;
     min-height: 100%;
+    background-color: rgb(218, 243, 242);
     
 }
 
@@ -58,17 +100,19 @@ body{
     display: flex;
     width: max(45%,20vw);
     height: 10%;
+
     
 }
 .input_blocks{
     display: flex;
     flex-direction: column;
     font-size: 2rem;
+    width: 40%;
 
 }
 .input_blocks>input{
-    max-width: 60%;
-    height: 34%;
+    max-width: 80%;
+    height: 30%;
 }
 input:focus{
     outline: none !important;
@@ -84,25 +128,31 @@ input:focus:valid{
     border-radius: 5px;
 }
 
-.signup_container>.footer>button{
+.footer>button{
     background-color: rgba(2, 112, 112, 0.815);
-    width:30%;
-    font-size: 250%;
+    min-width:80px;
+    font-size: 3rem;
+    padding: 1% 5%;
     color: aliceblue;
     font-weight: bold;
-    height: 80%;
-    padding: 0%;
-    text-align: center;
-    align-self: center;
+    border-radius: 5px;
+    
+    
+ 
     /* margin-left: 15%;*/
-    margin-bottom: 5%; 
+    /* margin-bottom: 5%;  */
     
 }
 .footer{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    min-width: 100%;
+    height: 20%;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+   
+    padding-bottom: 5%;
+    
     
 }
